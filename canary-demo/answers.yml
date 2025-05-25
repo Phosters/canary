@@ -1,6 +1,6 @@
 # Deployment Information
 pods_status:
-  main_pods_running: 1
+  main_pods_running: 3
   canary_pods_running: 1
 
 # Service Information
@@ -40,7 +40,7 @@ prometheus_metrics:
 rollback_test:
   previous_revision: 2
   rollback_command_used: helm rollback canary-demo 2 -n canary-demo
-  time_to_rollback_seconds: 2
+  time_to_rollback_seconds: 1
 
 # Error Budget Calculation (based on 99.9% SLO)
 error_budget:

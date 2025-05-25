@@ -1,8 +1,8 @@
-replicaCount: 3
+replicaCount: 1
 
 image:
   repository: uonyeka/canary-demo
-  tag: "v1"
+  tag: "v3"
   pullPolicy: IfNotPresent
 
 service:
@@ -18,7 +18,7 @@ canary:
   enabled: true
   replicaCount: 1
   image:
-    tag: "v2"
+    tag: "v1"
 
 config:
   main:
